@@ -1,39 +1,32 @@
-﻿using System.Globalization;
-using System.Text;
-
-namespace Canducci.Slug
+﻿namespace Canducci.Slug
 {
   public static class SlugExtensions
   {
-    public static string ToSlug(this string phrase)
+    public static string ToSlug(this string phrase, int length = 45)
     {
-      return GenerateSlug(phrase);
+      return GenerateSlug(phrase, length);
     }
-    private static string GenerateSlug(string phrase)
+    private static string GenerateSlug(string phrase, int length = 45)
     {
       string str = RemoveAccent(phrase);
       str = System.Text.RegularExpressions.Regex.Replace(str, @"[^a-z0-9\s-]", "");
       str = System.Text.RegularExpressions.Regex.Replace(str, @"\s+", " ").Trim();
-      str = str.Substring(0, str.Length <= 45 ? str.Length : 45).Trim();
-      str = System.Text.RegularExpressions.Regex.Replace(str, @"\s", "-");
-      return str;
+      str = str.Substring(0, str.Length <= length ? str.Length : length).Trim();
+      return System.Text.RegularExpressions.Regex.Replace(str, @"\s", "-");
     }
 
-    private static string RemoveAccent(string text)
+    private static string RemoveAccent(string phrase)
     {
-      StringBuilder sbReturn = new StringBuilder();
-      var arrayText = text
-        .ToLower()
-        .Normalize(NormalizationForm.FormD)
-        .ToCharArray();
-      foreach (char letter in arrayText)
+      System.Text.StringBuilder str = new System.Text.StringBuilder();
+      str.Clear();
+      foreach (char letter in phrase.ToLower().Normalize(System.Text.NormalizationForm.FormD).ToCharArray())
       {
-        if (CharUnicodeInfo.GetUnicodeCategory(letter) != UnicodeCategory.NonSpacingMark)
+        if (System.Globalization.CharUnicodeInfo.GetUnicodeCategory(letter) != System.Globalization.UnicodeCategory.NonSpacingMark)
         {
-          sbReturn.Append(letter);
+          str.Append(letter);
         }
       }
-      return sbReturn.ToString();
+      return str.ToString();
     }
   }
 }
