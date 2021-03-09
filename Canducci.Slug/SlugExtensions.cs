@@ -14,7 +14,6 @@
       str = str.Substring(0, str.Length <= length ? str.Length : length).Trim();
       return System.Text.RegularExpressions.Regex.Replace(str, @"\s", "-");
     }
-
     private static string RemoveAccent(string phrase)
     {
       System.Text.StringBuilder str = new System.Text.StringBuilder();
