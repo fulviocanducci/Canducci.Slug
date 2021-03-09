@@ -16,7 +16,6 @@ jobs:
         with:
           dotnet-version: 5.0.0
       - name: Build with dotnet
-          run: dotnet restore
           run: dotnet test
   
   publish:
