@@ -1,11 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31229.75
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Canducci.Slug", "Canducci.Slug\Canducci.Slug.csproj", "{6A3CE7C4-7764-45AD-A5CE-7A394ADF2957}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Canducci.Slug", "Canducci.Slug\Canducci.Slug.csproj", "{6A3CE7C4-7764-45AD-A5CE-7A394ADF2957}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Canducci.Slug.Test", "Canducci.Slug.Test\Canducci.Slug.Test.csproj", "{46F08625-F5A5-4926-8D1B-8F7365F73EC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Canducci.Slug.Test", "Canducci.Slug.Test\Canducci.Slug.Test.csproj", "{46F08625-F5A5-4926-8D1B-8F7365F73EC5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{609198A3-304C-4B08-BCB5-584D6D7AAF15}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +20,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{6A3CE7C4-7764-45AD-A5CE-7A394ADF2957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -44,5 +46,11 @@ Global
 		{46F08625-F5A5-4926-8D1B-8F7365F73EC5}.Release|x64.Build.0 = Release|Any CPU
 		{46F08625-F5A5-4926-8D1B-8F7365F73EC5}.Release|x86.ActiveCfg = Release|Any CPU
 		{46F08625-F5A5-4926-8D1B-8F7365F73EC5}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A1F2858C-64CE-45E9-B540-BD13CED5E146}
 	EndGlobalSection
 EndGlobal
