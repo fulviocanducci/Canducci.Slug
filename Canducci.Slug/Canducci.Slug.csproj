@@ -10,8 +10,10 @@
     <RepositoryType>Git</RepositoryType>
     <PackageTags>Slug Text</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.1</Version>
-    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <Version>1.0.2</Version>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/fulviocanducci/Canducci.Slug</PackageProjectUrl>
   </PropertyGroup>
   <ItemGroup>
     <None Include="..\logo.png">
