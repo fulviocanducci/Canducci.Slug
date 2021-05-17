@@ -15,7 +15,7 @@ PM> Install-Package Canducci.Slug
 
 Declare o namespace `using Canducci.Slug;`
 
-#### Example with up to 45 characters except the dash
+#### Example unlimited text example 
 
 ```csharp
 string textSlug = "product source main".ToSlug();
