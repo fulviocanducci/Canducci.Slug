@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>net461;netstandard2.0;netstandard2.1;</TargetFrameworks>
@@ -10,8 +10,8 @@
     <RepositoryType>Git</RepositoryType>
     <PackageTags>Slug Text</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.3</Version>
-    <AssemblyVersion>1.0.3.0</AssemblyVersion>
+    <Version>1.0.4</Version>
+    <AssemblyVersion>1.0.4.0</AssemblyVersion>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/fulviocanducci/Canducci.Slug</PackageProjectUrl>
     <PackageReleaseNotes>- Unlimited text example
