@@ -33,5 +33,13 @@ namespace Canducci.Slug.Test
             Assert.AreEqual(result, "product-source");
             Assert.AreEqual(14, result.Length);
         }
+
+        [TestMethod]
+        public void TestSlugTextValueNoLength()
+        {
+            string text = "Friend Sôuza Friend Peter ...";
+            string slug = text.ToSlug();
+            Assert.AreEqual("friend-souza-friend-peter", slug);
+        }
     }
 }
